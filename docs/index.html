@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Citadel Audit — evidence-cited network audits, on the laptop</title>
+  <meta name="description" content="Citadel Audit is the on-device network audit for consultants, MSPs, and CMMC contractors. Signed evidence, a local model, no data egress. Insider tester builds.">
+  <link rel="canonical" href="https://thegryhat.github.io/citadel-audit/">
+  <meta name="theme-color" content="#071018">
+  <meta property="og:title" content="Citadel Audit — evidence you can verify">
+  <meta property="og:description" content="Discover the devices on a network you are authorized to scan. Findings cite what was observed. The evidence file is signed. Nothing leaves the laptop.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thegryhat.github.io/citadel-audit/">
+  <meta property="og:image" content="https://thegryhat.github.io/citadel-audit/assets/og-citadel-audit.jpg">
+  <meta property="og:image:alt" content="Citadel Audit by GRYHAT — evidence you can verify">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Citadel Audit">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Citadel Audit — evidence you can verify">
+  <meta name="twitter:description" content="On-device discovery for consultants and CMMC-bound contractors. Signed evidence. No data egress.">
+  <meta name="twitter:image" content="https://thegryhat.github.io/citadel-audit/assets/og-citadel-audit.jpg">
+  <meta name="twitter:image:alt" content="Citadel Audit by GRYHAT — evidence you can verify">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="css/site.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Citadel Audit",
+    "alternateName": "Citadel Cyber Guardian",
+    "applicationCategory": "SecurityApplication",
+    "operatingSystem": "macOS, Linux, Windows",
+    "description": "Desktop app that discovers devices on an authorized network and produces evidence-cited security and compliance mappings, with signed exports and a local on-device model. Zero data egress.",
+    "softwareVersion": "2.0.0",
+    "url": "https://thegryhat.github.io/citadel-audit/",
+    "image": "https://thegryhat.github.io/citadel-audit/assets/og-citadel-audit.jpg",
+    "downloadUrl": "https://github.com/TheGRYHAT/citadel-audit/releases",
+    "publisher": {
+      "@type": "Organization",
+      "name": "GRY HAT CYBERSECURITY LLC",
+      "url": "https://www.gryhat.com"
+    },
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/LimitedAvailability",
+      "description": "Insider tester builds. A machine-bound license key is required and is requested privately."
+    }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img src="assets/citadel-audit-icon.webp" alt="" width="36" height="36">
+      <span>Citadel <em>Audit</em></span>
+    </a>
+    <nav class="site-nav" id="site-nav" data-nav>
+      <a href="#who">Who it's for</a>
+      <a href="#walkthrough">Walkthrough</a>
+      <a href="#download">Download</a>
+      <a href="request.html">License key</a>
+    </nav>
+    <button class="btn btn-ghost menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <a class="btn header-cta" href="request.html"><span class="cta-long">Request a license key</span><span class="cta-short">License key</span></a>
+  </header>
+
+  <main id="content">
+    <div class="wrap hero">
+      <div>
+        <p class="eyebrow">Insider tester builds · Citadel Cyber Guardian</p>
+        <h1>See the subnet. Keep the proof.</h1>
+        <p class="lede">Citadel Audit is the desktop app a consultant carries into the room. It discovers the devices on a network you are authorized to scan, maps what it actually observed to CMMC, NIST SP 800-171, SOC 2, and AI-governance references, and signs the evidence before you leave.</p>
+        <div class="hero-actions">
+          <a class="btn btn-lg" href="request.html">Request a license key</a>
+          <a class="text-link" href="#download">Get a tester build</a>
+        </div>
+        <ul class="promises">
+          <li>Nothing leaves the laptop</li>
+          <li>No agent on the client</li>
+          <li>Signed evidence you can re-check later</li>
+        </ul>
+      </div>
+      <figure class="hero-visual">
+        <img src="assets/screens/scanner-setup.webp" alt="Citadel Audit desktop scanner. The first-meeting setup stays locked until the approver, their role, the method, and the approved subnet are recorded.">
+        <img class="seal-float" src="assets/citadel-audit-seal.webp" alt="">
+      </figure>
+    </div>
+
+    <section class="section" id="who">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Who it's for</p>
+          <h2>Built for the person who has to show their work.</h2>
+          <p>Citadel Audit is a meeting instrument, not a certification. It gives you an inventory and a cited finding while you are still on site.</p>
+        </div>
+        <div class="audience">
+          <article>
+            <span class="kicker">Security consultants</span>
+            <h3>The first hour on a new subnet</h3>
+            <p>Walk in with written approval, read the live adapter, and come back with hostnames, manufacturers, and open ports — each finding tied to the observation that raised it.</p>
+          </article>
+          <article>
+            <span class="kicker">MSPs</span>
+            <h3>No agent, no credentials</h3>
+            <p>Nothing is installed on the client's machines and nothing is authenticated to. You see what is reachable from the segment you were allowed onto. You do not see traffic, and you do not claim a breach.</p>
+          </article>
+          <article>
+            <span class="kicker">CMMC-bound contractors</span>
+            <h3>Practice IDs, not a fake score</h3>
+            <p>Findings can cite CMMC 2.0 practices drawn from NIST SP 800-171, plus SOC 2 criteria. That is evidence for a readiness program. An assessor still decides pass or fail.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section band" id="product">
+      <div class="wrap split">
+        <div>
+          <p class="eyebrow">What it does</p>
+          <h2>One authorized sweep. A file you can still trust later.</h2>
+          <p>Discovery runs on the consultant laptop. The app reads the operating system's neighbour cache, sweeps with ICMP, and falls back to TCP for hosts that stay silent. Manufacturer names come from the IEEE assignment. Equipment from entities named in NDAA Section 889 is flagged by registered organization, not by a guess.</p>
+        </div>
+        <ul class="fact-list">
+          <li><strong>Framework mapping, with the practice.</strong> A finding can carry a CMMC, SOC 2, PCI-DSS, HIPAA, GDPR, or EU AI Act reference. The reference is attached to an observation. There is no invented "N of M controls passed."</li>
+          <li><strong>Shadow AI, named as alignment.</strong> Local inference servers — Ollama, ComfyUI, Gradio, LM Studio — are identified on the ports distinctive to each. That mapping is aligned with IAiGACB. The product does not issue a certification of anyone's model.</li>
+          <li><strong>A local model, on the machine.</strong> Narrative and questions run against a model loaded in the app. It is written to summarize what the scan saw and to say what it did not assess. There is no cloud API key in the product.</li>
+          <li><strong>Signed evidence.</strong> The export is signed with Ed25519 in minisign format, covering the findings and the authorization together. You verify it later with the open-source minisign tool. Alter one record and verification fails.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="walkthrough">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Screens from the 2.0.0 build</p>
+          <h2>The meeting, in the order it actually happens.</h2>
+          <p>These are screens from the shipped desktop build on macOS and Linux, captured on our own lab network. Use the chapters to move through the job. Keyboard left and right work once a chapter has focus.</p>
+        </div>
+        <div class="story" data-story>
+          <div class="story-nav" role="tablist" aria-label="Product walkthrough">
+            <button type="button" role="tab" data-frame-tab="frame-authorize" aria-selected="true">Authorize</button>
+            <button type="button" role="tab" data-frame-tab="frame-sweep" aria-selected="false">Sweep</button>
+            <button type="button" role="tab" data-frame-tab="frame-empty" aria-selected="false">Before a scan</button>
+            <button type="button" role="tab" data-frame-tab="frame-findings" aria-selected="false">Findings</button>
+            <button type="button" role="tab" data-frame-tab="frame-frameworks" aria-selected="false">Frameworks</button>
+            <button type="button" role="tab" data-frame-tab="frame-heatmap" aria-selected="false">Heatmap</button>
+            <button type="button" role="tab" data-frame-tab="frame-vendors" aria-selected="false">Vendors</button>
+            <button type="button" role="tab" data-frame-tab="frame-report" aria-selected="false">Report</button>
+            <button type="button" role="tab" data-frame-tab="frame-ai" aria-selected="false">On-device AI</button>
+            <button type="button" role="tab" data-frame-tab="frame-roe" aria-selected="false">Active test</button>
+            <button type="button" role="tab" data-frame-tab="frame-active" aria-selected="false">Active results</button>
+          </div>
+
+          <figure class="story-frame is-active" id="frame-authorize" data-frame>
+            <img src="assets/screens/scanner-setup.webp" alt="First-meeting audit setup. Scan authorization fields for who approved the scan, their role, how approval was given, a reference, and the approved subnet.">
+            <figcaption><strong>The scan stays locked</strong> until the approver, their role, the method, and the approved scope are recorded. A target outside that range is refused.</figcaption>
+          </figure>
+          <figure class="story-frame" id="frame-sweep" data-frame>
+            <img src="assets/screens/linux-scan-complete.webp" alt="Linux desktop after an authorized sweep. The log shows the scope, the recorded authorization, and a completed enumeration.">
+            <figcaption><strong>Same app on Ubuntu (x64).</strong> A published lab run of build 2.0.0 enumerated 14 devices in 10.9 seconds, with the authorization already on the record. That is a lab measurement, not a promise about your network.</figcaption>
+          </figure>
+          <figure class="story-frame" id="frame-empty" data-frame>
+            <img src="assets/screens/linux-no-scan-data.webp" alt="Dashboard before any scan, stating there is no data to report.">
+            <figcaption><strong>No data is not a clean bill.</strong> Before a scan runs, the dashboard says there is nothing to report. It does not show a reassuring default.</figcaption>
+          </figure>
+          <figure class="story-frame" id="frame-findings" data-frame>
+            <img src="assets/screens/findings-table.webp" alt="Findings table with a practice identifier, the literal observation, and remediation for each row.">
+            <figcaption><strong>Each finding carries the practice, the literal observation, and the remediation.</strong> Severity describes exposure seen on the segment. The scanner cannot tell whether a service is patched.</figcaption>
+          </figure>
+          <figure class="story-frame" id="frame-frameworks" data-frame>
+            <img src="assets/screens/compliance-frameworks.webp" alt="Framework overview built from observed findings across CMMC, SOC 2, PCI-DSS, GDPR, HIPAA, and AI governance.">
+            <figcaption><strong>CMMC, SOC 2, PCI-DSS, GDPR, HIPAA, and AI governance</strong> — rows that exist because a finding exists. AI-governance references are aligned with IAiGACB. They are not a certification.</figcaption>
+          </figure>
+          <figure class="story-frame" id="frame-heatmap" data-frame>
+            <img src="assets/screens/compliance-heatmap.webp" alt="Compliance heatmap of discovered devices against frameworks, colored by the exposure observed.">
+            <figcaption><strong>Every discovered device against every framework</strong>, colored by the exposure actually seen. An empty cell is not a pass.</figcaption>
+          </figure>
+          <figure class="story-frame" id="frame-vendors" data-frame>
+            <img src="assets/screens/vendor-risk.webp" alt="Vendor risk matrix with hardware attribution and NDAA status.">
+            <figcaption><strong>Hardware attribution and NDAA status.</strong> Randomised addresses are reported as unattributable. They are not guessed.</figcaption>
+          </figure>
+          <figure class="story-frame" id="frame-report" data-frame>
+            <img src="assets/screens/report-summary.webp" alt="Executive audit report summarizing findings and implicated frameworks.">
+            <figcaption><strong>The report you keep.</strong> Findings and implicated frameworks, produced in the meeting. Findings only — not a certification.</figcaption>
+          </figure>
+          <figure class="story-frame" id="frame-ai" data-frame>
+            <img src="assets/screens/linux-local-ai.webp" alt="On-device AI Ops panel answering from the last scan and stating what the scan did not assess.">
+            <figcaption><strong>Asked for an analysis, the on-device model summarized only what the scan saw</strong> — and said what it did not assess. No CVE correlation, no credentialed inspection, no traffic analysis.</figcaption>
+          </figure>
+          <figure class="story-frame" id="frame-roe" data-frame>
+            <img src="assets/screens/active-test-roe.webp" alt="Rules of engagement screen for authorized active testing, separate from discovery consent.">
+            <figcaption><strong>Active testing needs its own signed permission</strong>, separate from discovery consent, and that permission is written into the evidence. It is a Pro capability.</figcaption>
+          </figure>
+          <figure class="story-frame" id="frame-active" data-frame>
+            <img src="assets/screens/active-test-complete.webp" alt="Completed authorized active test, with checks that did not apply marked as skipped rather than passed.">
+            <figcaption><strong>Every run is logged with who authorized it and who signed it.</strong> Checks that do not apply are skipped and said so. They are not counted as passes.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section band" id="how">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">How a test run works</p>
+          <h2>Six steps, and the scan is step four.</h2>
+        </div>
+        <ol class="steps">
+          <li class="step">
+            <h3>Install the build for your OS</h3>
+            <p>macOS and Linux are verified. Windows is an experimental preview and is untested. Binaries live on GitHub Releases, not in this repository.</p>
+          </li>
+          <li class="step">
+            <h3>Copy the Machine ID</h3>
+            <p>Tester builds open on an activation screen. Copy the Machine ID shown there — the machine serial this install is bound to.</p>
+          </li>
+          <li class="step">
+            <h3>Request a key in private</h3>
+            <p>Email the request to GRYHAT. Do not put the Machine ID in a GitHub issue. Activation is checked on the machine and works without a license server.</p>
+          </li>
+          <li class="step">
+            <h3>Record who approved the subnet</h3>
+            <p>Name the approver, their role, how they approved it, and the range. The app refuses a target outside that range, before a packet is sent.</p>
+          </li>
+          <li class="step">
+            <h3>Read findings, not a score</h3>
+            <p>Each row names the exposure and the control it implicates. Unknown hardware stays unknown. A scan that enumerates nothing is a failure, not a clean network.</p>
+          </li>
+          <li class="step">
+            <h3>Keep the signed file</h3>
+            <p>Verify the export later with minisign and the public key that ships with it. You do not need a GRYHAT account, and you do not need the app.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="privacy">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Privacy</p>
+          <h2>Zero data egress is the design, not a setting.</h2>
+        </div>
+        <div class="principles">
+          <div>
+            <article class="principle">
+              <h3>The laptop in the room is the whole system</h3>
+              <p>Discovery and the on-device model both run locally. There is no cloud SDK to call home, and a non-private model endpoint is refused. Assets are bundled, so the app renders the same way on an isolated segment.</p>
+            </article>
+            <article class="principle">
+              <h3>The license never phones home</h3>
+              <p>A key is signed, bound to the machine serial, and verified locally against an embedded public key. Tampered or expired licenses are rejected. Air-gapped activation is the normal path.</p>
+            </article>
+            <article class="principle">
+              <h3>It will not invent a finding to fill a page</h3>
+              <p>Observed or absent. An unattributable address stays unknown. An empty vulnerability list means not assessed, never "none present." The scanning machine stays in the inventory and raises no findings against you, and that exclusion is recorded.</p>
+            </article>
+          </div>
+          <div class="panel">
+            <span class="kicker">What a tester should not upload</span>
+            <h3>Public feedback is for the product, not the network.</h3>
+            <p>Bug reports belong in GitHub issues. Client addresses, hostnames, evidence files, and license keys do not. If a screenshot would show someone else's environment, describe the behavior instead.</p>
+            <p class="quiet-note">Published lab note, build 2.0.0: a /24 sweep completed in about fifteen seconds, with zero outbound connections by design. Your segment will differ. Two platforms are verified on real hardware — macOS and Linux.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section band" id="download">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Download</p>
+          <h2>Tester builds are GitHub Releases.</h2>
+          <p>This repository does not contain the application, and it does not contain binaries. When a build is posted, it is an asset on the <a href="https://github.com/TheGRYHAT/citadel-audit/releases">Releases page</a>. If that page is empty, a tester build has not been published yet — the Machine ID only exists after you install one.</p>
+        </div>
+        <div class="os-grid">
+          <article class="os-card">
+            <h3>macOS <span class="tag">Verified</span></h3>
+            <p>Universal DMG for the 2.0.0 line. Shipped macOS builds are Developer ID signed and notarized, and have been run on real hardware.</p>
+            <ol>
+              <li>Download the DMG from Releases and open it.</li>
+              <li>Drag Citadel Audit to Applications.</li>
+              <li>First launch can ask you to confirm an app downloaded from the internet. That prompt is normal.</li>
+              <li>If Gatekeeper says the developer cannot be verified, that tester file was not notarized. Use System Settings → Privacy &amp; Security → Open Anyway. If macOS says the file is damaged, download it again. Do not expect the unidentified-developer prompt on a notarized build.</li>
+            </ol>
+          </article>
+          <article class="os-card">
+            <h3>Linux <span class="tag">Verified</span></h3>
+            <p>AppImage and .deb for x64 and arm64. A full scan was verified on Ubuntu 26.04 (x64). Other distributions are not claimed.</p>
+            <ol>
+              <li>AppImage: <code>chmod +x</code> the file and run it. Some desktops need FUSE installed before an AppImage will start.</li>
+              <li>.deb: <code>sudo apt install ./the-package.deb</code> from the folder that contains the download.</li>
+              <li>If it fails to start, report the distro and the error text. Leave scan output out of the issue.</li>
+            </ol>
+          </article>
+          <article class="os-card experimental">
+            <h3>Windows <span class="tag tag-amber">Experimental preview</span></h3>
+            <p>Windows is untested. A live scan has not been verified. Treat any Windows build as a preview, not as a platform you can deliver an audit from.</p>
+            <ol>
+              <li>Tester builds are unsigned. SmartScreen will say Windows protected your PC.</li>
+              <li>More info → Run anyway is the tester path. It is not a statement that the file is a finished, signed release.</li>
+              <li>Do not quote a Windows result as a verified Citadel Audit scan.</li>
+            </ol>
+          </article>
+        </div>
+        <p class="quiet-note">You need a machine that is actually on the subnet you were allowed to scan. Internet is not required to activate a key or to run discovery. The on-device model ships inside the app, so the installer is a full desktop build, not a thin client. Exact disk and OS minimums are whatever the posted Release names — this page will not invent them.</p>
+      </div>
+    </section>
+
+    <section class="section" id="limits">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Limits</p>
+          <h2>Stated plainly, because a tool that hides them cannot be trusted.</h2>
+        </div>
+        <div class="limits">
+          <article class="limit">
+            <h3>Not a vulnerability scanner</h3>
+            <p>No CVE correlation. An empty vulnerability list means the question was not asked.</p>
+          </article>
+          <article class="limit">
+            <h3>Not credentialed, and not an agent</h3>
+            <p>Nothing is installed on the hosts you discover, and nothing logs in.</p>
+          </article>
+          <article class="limit">
+            <h3>One on-premises subnet</h3>
+            <p>No cloud or SaaS estate. One approved range per scan.</p>
+          </article>
+          <article class="limit">
+            <h3>No exploitation</h3>
+            <p>Safe-checks observe a service's own response. Pro active tests try anonymous access only, under a separate signed rules of engagement. No brute force, no exploit payloads, no writes.</p>
+          </article>
+          <article class="limit">
+            <h3>Exposure, not compromise</h3>
+            <p>Citadel reports what a host exposes on the segment. It does not detect a breach, and it does not watch traffic.</p>
+          </article>
+          <article class="limit">
+            <h3>Not an attestation</h3>
+            <p>A mapping is not a SOC 2 report and not a CMMC certificate. IAiGACB is named only as alignment. An accredited assessor or a licensed CPA firm is who attests.</p>
+          </article>
+        </div>
+
+        <div class="section-head" style="margin-top:2.5rem">
+          <h2>What a finding is willing to say</h2>
+          <p>Thirty-three audit-relevant ports sit behind ten rules in the 2.0.0 build. Ports 5000 and 8000 are deliberately not treated as AI services: on macOS, 5000 is AirPlay, and flagging it would be a false finding. A shortened map:</p>
+        </div>
+        <div class="table-scroll">
+          <table class="exposure">
+            <thead>
+              <tr><th>Exposure</th><th>Why it is listed</th><th>Rating on the segment</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Telnet</td><td>Credentials cross the network in cleartext.</td><td>Critical</td></tr>
+              <tr><td>Open datastores</td><td>Redis, MongoDB, Elasticsearch, and Memcached have a history of defaulting to no authentication.</td><td>Critical</td></tr>
+              <tr><td>NDAA Section 889 vendor</td><td>The registered manufacturer matches a covered entity (FAR 52.204-25).</td><td>Critical</td></tr>
+              <tr><td>FTP, RDP, VNC, databases</td><td>Cleartext admin, a common ransomware door, weak remote screens, or a data store reachable from a general segment.</td><td>High</td></tr>
+              <tr><td>Shadow AI</td><td>Ollama, ComfyUI, Gradio, or LM Studio on a distinctive port. Uninventoried. Aligned with IAiGACB.</td><td>High</td></tr>
+              <tr><td>SMB and cleartext admin</td><td>Lateral movement and management over HTTP. HTTP on the gateway is rated lower than HTTP on a workstation.</td><td>Medium or Low</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="request">
+      <div class="wrap">
+        <div class="cta-band">
+          <div>
+            <p class="eyebrow">One next step</p>
+            <h2>Request a license key.</h2>
+            <p>Keys are machine-bound. The request asks for your name, company, email, OS, and the Machine ID from the activation screen. It opens an email to andy@gryhat.com. It does not open a public issue.</p>
+          </div>
+          <a class="btn btn-lg" href="request.html">Request a license key</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Citadel Audit (Citadel Cyber Guardian) is proprietary software of GRY HAT CYBERSECURITY LLC. Tester builds only. <a href="https://www.gryhat.com/services/citadel-audit">Product background</a>.</p>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="request.html">License key</a>
+        <a href="https://github.com/TheGRYHAT/citadel-audit/releases">Releases</a>
+        <a href="https://github.com/TheGRYHAT/citadel-audit/issues/new/choose">Feedback</a>
+        <a href="https://github.com/TheGRYHAT/citadel-audit/blob/public/SECURITY.md">Security</a>
+        <a href="https://github.com/TheGRYHAT/citadel-audit/blob/public/LICENSE">Terms (draft)</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="js/site.js"></script>
+</body>
+</html>

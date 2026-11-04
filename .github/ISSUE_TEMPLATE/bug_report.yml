@@ -1,0 +1,67 @@
+name: Bug report or feedback
+description: Product notes for Citadel Audit tester builds. Do not include a client's network.
+title: "[Feedback] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Do not post sensitive network data.**
+
+        No IP addresses, hostnames from a client or lab you do not want public, evidence JSON, screenshots of someone else's environment, license keys, or Machine IDs.
+
+        A license key is not requested here. Use the private request on the tester site, or the email link in the README.
+
+        Windows builds are an experimental preview and are untested. Say so if that is the platform you hit.
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What is this?
+      options:
+        - Bug
+        - Install problem
+        - Product feedback
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - macOS
+        - Linux
+        - Windows (experimental preview, untested)
+    validations:
+      required: true
+
+  - type: input
+    id: build
+    attributes:
+      label: Build
+      description: The GitHub Release name or file you installed, if you have it. Leave blank rather than guessing.
+      placeholder: "Release asset name"
+
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: Describe the behavior. Redact any network detail before you paste.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Before you submit
+      options:
+        - label: I have not included scan output, evidence files, IP addresses, hostnames, client names, a license key, or a Machine ID.
+          required: true
