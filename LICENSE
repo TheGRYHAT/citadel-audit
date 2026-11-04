@@ -1,0 +1,86 @@
+DRAFT — FOR ANDY VACA / GRY HAT CYBERSECURITY LLC TO REVIEW
+================================================================
+
+This file is a placeholder tester end-user license. It is not a finished
+agreement. Do not give it to a paying customer, and do not describe it as
+counsel-reviewed, until Andy has replaced this banner with a version he
+is willing to stand behind.
+
+Until that happens, the operative points for an insider tester are the
+ones below. Where this draft is silent or clumsy, ask andy@gryhat.com
+before you assume a right.
+
+Citadel Audit — Insider Tester Evaluation Terms (draft)
+-------------------------------------------------------
+
+Product. "Citadel Audit" (application name "Citadel Cyber Guardian") is
+proprietary software of GRY HAT CYBERSECURITY LLC ("GRYHAT"). All rights
+not expressly granted in a countersigned license, or in a license key
+GRYHAT actually issues to you, are reserved.
+
+Who these terms cover. They cover an insider tester who receives a build
+from the public download repository or from a GitHub Release, and a
+machine-bound evaluation key. They are not the commercial subscription,
+the partner-seat terms, or a customer statement of work.
+
+Grant. GRYHAT grants you a limited, revocable, non-exclusive,
+non-transferable, non-sublicensable license to install and run the tester
+build on the computer whose Machine ID you submitted, for internal
+evaluation, for as long as the key says it is valid.
+
+What you do not receive.
+
+- No right to redistribute the build, post the binary elsewhere, or
+  share a license key.
+- No right to rent, host, or white-label the app.
+- No ownership of the software, the signatures, the mappings, or the
+  model weights bundled with a build.
+- No right to remove proprietary notices.
+
+Machine binding. A key is checked on the machine. It is not a floating
+seat and it does not call a license server. Bypassing that check is
+outside this grant.
+
+Your networks. You may scan only a range that the owner of that network
+has authorized you to scan. You are responsible for that authorization.
+Do not put client addresses, hostnames, evidence files, or license keys
+into a public GitHub issue.
+
+Feedback. You may send bug reports and suggestions. GRYHAT may use that
+feedback without obligation to you. Do not send it if a third party owns
+it and you cannot share it.
+
+Tester builds are unfinished. macOS and Linux builds have been run on
+real hardware. Windows builds are an experimental preview and are
+untested. A tester build may be unsigned. Gatekeeper or SmartScreen
+warnings on an unsigned file are expected. There is no uptime commitment
+and no support level in this draft beyond answers Andy chooses to give.
+
+No warranty. THE TESTER BUILD IS PROVIDED "AS IS" AND "AS AVAILABLE."
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, GRYHAT DISCLAIMS WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND
+NON-INFRINGEMENT. CITADEL AUDIT DOES NOT CERTIFY YOU AGAINST CMMC,
+NIST SP 800-171, SOC 2, PCI-DSS, HIPAA, GDPR, THE EU AI ACT, ISO 27001,
+ISO 42001, OR IAiGACB. MAPPINGS ARE EVIDENCE. THEY ARE NOT AN ATTESTATION.
+WHERE IAiGACB IS NAMED, THE WORD IS "ALIGNED WITH." THIS DRAFT DOES NOT GRANT OR CLAIM AN IAiGACB CREDENTIAL.
+
+Liability. TO THE MAXIMUM EXTENT PERMITTED BY LAW, GRYHAT WILL NOT BE
+LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR LOST-PROFIT
+DAMAGES, OR FOR A CLIENT'S RELIANCE ON A TESTER BUILD. The cap, the
+governing law, and the venue are intentionally left blank in this draft
+for counsel. Do not invent them. Placeholder only, not a choice: the
+company operates from California.
+
+Stop. GRYHAT may end an evaluation key at expiry or by telling you to
+stop. When it ends, delete the tester build from machines you control,
+except for evidence files a client engagement already requires you to
+keep. Those evidence files are the client's records, not a license to
+keep using the app.
+
+Contact. andy@gryhat.com
+
+Copyright. Copyright (c) 2026 GRY HAT CYBERSECURITY LLC. All rights reserved.
+
+The typeface Outfit, used on the tester website only, is separately
+licensed under the SIL Open Font License 1.1. See docs/assets/fonts/OFL.txt.
+That license does not apply to Citadel Audit itself.

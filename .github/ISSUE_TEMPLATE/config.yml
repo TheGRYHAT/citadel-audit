@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Request a license key
+    url: https://thegryhat.github.io/citadel-audit/request.html
+    about: Keys are machine-bound. Requests are private email, not issues. Do not paste a Machine ID here.
+  - name: License request by email (works before the website is enabled)
+    url: https://github.com/TheGRYHAT/citadel-audit/blob/public/README.md#request-a-license-key
+    about: Opens the README section with the prefilled message to andy@gryhat.com.

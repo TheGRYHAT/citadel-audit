@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Request a Citadel Audit license key</title>
+  <meta name="description" content="Request a machine-bound Citadel Audit license. Send your name, company, email, OS, and the Machine ID from the activation screen. The request is a private email, not a GitHub issue.">
+  <link rel="canonical" href="https://thegryhat.github.io/citadel-audit/request.html">
+  <meta name="theme-color" content="#071018">
+  <meta property="og:title" content="Request a Citadel Audit license key">
+  <meta property="og:description" content="Machine-bound keys, requested in private. Name, company, email, OS, and the Machine ID from the activation screen.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thegryhat.github.io/citadel-audit/request.html">
+  <meta property="og:image" content="https://thegryhat.github.io/citadel-audit/assets/og-citadel-audit.jpg">
+  <meta property="og:image:alt" content="Citadel Audit by GRYHAT — evidence you can verify">
+  <meta property="og:site_name" content="Citadel Audit">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Request a Citadel Audit license key">
+  <meta name="twitter:description" content="A private email to GRYHAT. Do not put a Machine ID in a public issue.">
+  <meta name="twitter:image" content="https://thegryhat.github.io/citadel-audit/assets/og-citadel-audit.jpg">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img src="assets/citadel-audit-icon.webp" alt="" width="36" height="36">
+      <span>Citadel <em>Audit</em></span>
+    </a>
+    <nav class="site-nav" id="site-nav" data-nav>
+      <a href="index.html#walkthrough">Walkthrough</a>
+      <a href="index.html#download">Download</a>
+      <a href="request.html" aria-current="page">License key</a>
+    </nav>
+    <button class="btn btn-ghost menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <a class="btn header-cta" href="#form"><span class="cta-long">Request a license key</span><span class="cta-short">License key</span></a>
+  </header>
+
+  <main id="content">
+    <div class="wrap page-intro">
+      <p class="eyebrow">Private request · machine-bound key</p>
+      <h1>Request a license key.</h1>
+      <p>A Citadel Audit license is checked on the computer it was issued for. Tester builds ship without a key. This form does not store anything and does not open a GitHub issue. It prepares an email to <a href="mailto:andy@gryhat.com?subject=Citadel%20Audit%20license%20request">andy@gryhat.com</a> with the subject "Citadel Audit license request".</p>
+    </div>
+
+    <div class="wrap form-layout">
+      <!--
+        License requests are private. js/license-request.js owns the submit.
+        To replace mailto with a hosted form later, set licenseRequestConfig.mode
+        to "form" and fill endpoint. Do not point that endpoint at GitHub Issues.
+      -->
+      <form class="card" id="form" data-license-form novalidate action="mailto:andy@gryhat.com" method="post" enctype="text/plain">
+        <input type="hidden" name="subject" value="Citadel Audit license request">
+        <div class="fields">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="company">Company</label>
+            <input id="company" name="company" autocomplete="organization" required>
+          </div>
+          <div class="field span-2">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <fieldset class="field span-2">
+            <legend>Operating system</legend>
+            <div class="os-choices">
+              <label><input type="radio" name="os" value="macOS" required> macOS <span class="hint">Verified. Signed and notarized builds are the normal macOS line.</span></label>
+              <label><input type="radio" name="os" value="Linux"> Linux <span class="hint">Verified on Ubuntu 26.04 x64. AppImage and .deb, x64 and arm64.</span></label>
+              <label><input type="radio" name="os" value="Windows (experimental preview, untested)"> Windows <small>Experimental preview. Untested. A live scan has not been verified.</small></label>
+            </div>
+          </fieldset>
+          <div class="field span-2">
+            <label for="machine">Machine ID</label>
+            <input id="machine" name="machine" class="mono" spellcheck="false" autocapitalize="off" autocomplete="off" required aria-describedby="machine-help">
+            <p class="hint" id="machine-help">Paste the value exactly as the app shows it.</p>
+          </div>
+        </div>
+
+        <div class="where">
+          <h2>Where the Machine ID appears</h2>
+          <ol>
+            <li>Install the tester build and open Citadel Audit.</li>
+            <li>A build that does not yet have a license stops on the <strong>activation screen</strong>. That screen is where this computer's Machine ID is shown — the machine serial the key will be bound to.</li>
+            <li>Copy that whole value into the field above. Do not send a screenshot of a client network in its place.</li>
+            <li>If the app is already licensed when it opens, you do not need another key for that machine.</li>
+          </ol>
+          <p class="hint">The activation check is local. There is no license server, and the request email is how a tester asks GRYHAT to sign a key for that serial.</p>
+        </div>
+
+        <label class="check">
+          <input type="checkbox" name="consent" required>
+          <span>This email will contain only my name, company, email, OS, and Machine ID. I will not include scan results, addresses, hostnames, evidence files, or client names.</span>
+        </label>
+
+        <p class="form-error" data-form-error hidden></p>
+        <button class="btn btn-lg" type="submit">Email this request</button>
+        <noscript>
+          <p>JavaScript is off. <a href="mailto:andy@gryhat.com?subject=Citadel%20Audit%20license%20request&amp;body=Name%3A%0ACompany%3A%0AEmail%3A%0AOS%3A%0AMachine%20ID%3A%0A%0AA%20machine-bound%20license%20key%20is%20requested%20for%20the%20Machine%20ID%20above.">Open the email</a> and fill in the same five fields. Subject: Citadel Audit license request.</p>
+        </noscript>
+      </form>
+
+      <aside class="preview">
+        <h2>What your mail client will open</h2>
+        <p class="hint">To: andy@gryhat.com<br>Subject: Citadel Audit license request</p>
+        <pre data-mail-preview></pre>
+        <button class="btn btn-ghost" type="button" data-copy-request>Copy the request</button>
+        <p class="hint">If the mail app does not open, paste the copy into a new message. Nothing on this page is published.</p>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>GRY HAT CYBERSECURITY LLC · Citadel Audit tester program. Do not file a public issue to ask for a key.</p>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="index.html">Overview</a>
+        <a href="index.html#download">Download</a>
+        <a href="https://github.com/TheGRYHAT/citadel-audit/blob/public/SECURITY.md">Security</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="js/site.js"></script>
+  <script src="js/license-request.js"></script>
+</body>
+</html>
